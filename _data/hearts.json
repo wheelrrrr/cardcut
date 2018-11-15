@@ -1,0 +1,111 @@
+{
+	"title": "Play",
+	"actions": [
+		{
+			"text": "",
+			"type": "root",
+			"title": "Hand",
+			"actions": [
+				{
+					"text": "Random dealer. 17 (<strong>3</strong><i class='fas fa-user'></i>) , 13 (<strong>4</strong><i class='fas fa-user'></i>) or  10 (<strong>5</strong><i class='fas fa-user'></i> [2♦] & [2♣] removed) cards each.",
+					"type": "deal",
+					"title": "Deal",
+					"actions": [
+						{
+							"text": "All players choose 3 cards to pass face down.",
+							"type": "deal2",
+							"title": "Pass Cards",
+							"actions": [
+								{
+									"text": "On 1st hand: pass to left, 2nd hand: pass to right, 3rd hand: pass opposite, 4th hand: no passing.",
+									"type": "deal3",
+									"title": "Pass Rotation"
+								}
+							]
+						}
+					]
+				},
+				{
+					"text": "Player with 2♣ leads by playing it (or 3♣ if no 2♣).",
+					"type": "play",
+					"title": "Play",
+					"actions": [
+						{
+							"text": "Lead any suit but not Hearts ♥ until a Heart has been played ('broken').",
+							"type": "play2",
+							"title": "Trick",
+							"actions": [
+								{
+									"text": "",
+									"type": "play3",
+									"title": "Each Player",
+									"actions": [
+										{
+											"text": "Play card following suit if possible.</em>",
+											"type": "play4",
+											"title": "Follow Suit",
+											"prefix": "Do"
+										},
+										{
+											"text": "Including Heart ♥ and Black Maria Q♠.",
+											"type": "play4",
+											"title": "Play any other suit",
+											"prefix": "Else"
+										}
+									],
+									"subtitle": "Until all players have played"
+								},
+								{
+									"text": "Winner of Trick is highest rank of lead suit. Winner leads next trick until no more cards.",
+									"type": "play2",
+									"title": "Next Trick"
+								}
+							],
+							"subtitle": "Repeat until all cards have been played"
+						}
+					]
+				},
+				{
+					"text": "Each Heart won is 1pt. Black Maria Q♠ is 13pts.",
+					"type": "score",
+					"title": "Score",
+					"actions": [
+						{
+							"text": "If player wins ALL Hearts & Q♠ remove 26pts from their score or add 26pts to all others (player choice).",
+							"type": "score",
+							"title": "Shooting The Moon"
+						}
+					],
+					"reference": {
+						"items": [
+							{
+								"key": "Each Heart",
+								"value": "1pt"
+							},
+							{
+								"key": "Black Maria Q♠",
+								"value": "13pts"
+							},
+							{
+								"key": "Shooting the moon",
+								"value": "-26pts"
+							}
+						],
+						"title": "Scoring Reference"
+					}
+				},
+				{
+					"text": "When all cards played.",
+					"type": "root",
+					"title": "Next Hand"
+				}
+			],
+			"subtitle": "Repeat until a player reaches target score"
+		},
+		{
+			"text": "A player reaches 100pts (or any value agreed). The player with the lowest score wins.",
+			"type": "end",
+			"title": "Game End"
+		}
+	]
+}

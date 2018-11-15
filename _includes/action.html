@@ -1,0 +1,40 @@
+<!-- <div style='margin:5px 5px 5px 20px;;border-style: solid;display:inline-block;'> -->
+        <section class="container-section section">
+    <div class="columns">
+        <!-- <div class="column is-1 depth-{{depth}}"></div> -->
+            {% if include.action.actions | size > 0 %}
+            <div class="column col-padding is-{{6 | plus: depth}} depth-{{depth}}">
+                <section class="card-section section">
+                    <h4 class="title is-4">{{include.action.title}}</h4>
+                    <p class="subtitle is-6">{{include.action.text}}</p>
+                </section>
+            </div>
+            {% else %}
+            <div class="column col-padding depth-{{depth}}">
+                <section class="card-section section">
+                    <h4 class="title is-4">{{include.action.title}}</h4>
+                    <p class="subtitle is-6">{{include.action.text}}</p>
+                </section>
+            </div>
+            {% endif %}
+    </div>
+    {% if include.action.actions | size > 0 %}
+    <div class="columns">
+        <div class="column col-padding is-1 depth-{{depth}}"></div>
+        <div class="column col-padding">
+            {% for action in include.action.actions %}
+                {% assign depth = depth | plus: 1 %}
+                {% include action.html action=action  %}
+                {% assign depth = depth | minus: 1 %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="columns">
+        <!-- <div class="column is-1 depth-{{depth}}"></div> -->
+        <div class="column col-padding is-{{6 | plus: depth}} depth-{{depth}}">
+            <section class="card-section section">
+            </section>
+        </div>
+    </div>
+    {% endif %}
+    </section>

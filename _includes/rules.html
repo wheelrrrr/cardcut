@@ -1,0 +1,14 @@
+<div class="container">
+{% assign depth = 0 %}
+<div class="columns">
+    <div class="column is-8 is-offset-2">
+        <h1 class="title is-1">{{page.title}}</h1>
+        <section class="card-section section">
+            <h4 class="title is-4">{{ site.data[page.gamename].title }}</h4>
+        </section>
+            {% for action in site.data[page.gamename].actions %}
+                {% include action.html action=action %}
+            {% endfor %}
+    </div>
+</div>
+        
