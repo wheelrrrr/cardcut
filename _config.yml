@@ -31,7 +31,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-category-list: [rules]
+category-list: [games]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

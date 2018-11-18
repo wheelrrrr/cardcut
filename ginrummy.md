@@ -2,7 +2,7 @@
 layout: default
 title: Gin Rummy
 resource: true
-categories: [rules]
+categories: [games]
 gamename: ginrummy
 ---
 

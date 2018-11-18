@@ -2,7 +2,7 @@
 layout: default
 title: Shithead
 resource: true
-categories: [rules]
+categories: [games]
 gamename: shithead
 ---
 

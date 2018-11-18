@@ -2,7 +2,7 @@
 layout: default
 title: Oh Hell
 resource: true
-categories: [rules]
+categories: [games]
 gamename: ohhell
 ---
 

@@ -2,7 +2,7 @@
 layout: default
 title: Hearts
 resource: true
-categories: [rules]
+categories: [games]
 gamename: hearts
 ---
 

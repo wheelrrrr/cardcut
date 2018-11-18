@@ -2,7 +2,7 @@
 layout: default
 title: Skull
 resource: true
-categories: [rules]
+categories: [games]
 gamename: skull
 ---
 

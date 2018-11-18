@@ -34,8 +34,9 @@
 <nav class="navbar">
   <div class="container">
       <div class="navbar-brand">
-          <a class="navbar-item" href="../">
-                  <img src="../images/bulma.png" alt="Logo">
+          <a class="navbar-item" href="{{ "/" | prepend: site.baseurl }}">
+                  <img src="{{ "/assets/images/logo.svg" | prepend: site.baseurl }}" alt="Logo">
+                  <span class="title is-5">Cardcut</span>
               </a>
           <span class="navbar-burger burger" data-target="navbarMenu">
                   <span></span>
@@ -45,10 +46,10 @@
       </div>
       <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-end">
-              <a class="navbar-item is-active">
+              <a href="{{ "/" | prepend: site.baseurl }}" class="navbar-item is-active">
                       Home
                   </a>
-              <a class="navbar-item">
+              <!-- <a class="navbar-item">
                       Examples
                   </a>
               <a class="navbar-item">
@@ -82,7 +83,7 @@
                           Logout
                       </div>
                   </div>
-              </div>
+              </div> -->
           </div>
       </div>
   </div>

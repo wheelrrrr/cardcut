@@ -2,7 +2,7 @@
 layout: default
 title: Cribbage
 resource: true
-categories: [rules]
+categories: [games]
 gamename: cribbage
 ---
 

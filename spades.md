@@ -2,7 +2,7 @@
 layout: default
 title: Spades
 resource: true
-categories: [rules]
+categories: [games]
 gamename: spades
 ---
 

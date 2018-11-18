@@ -2,7 +2,7 @@
 layout: default
 title: Crazy Eights
 resource: true
-categories: [rules]
+categories: [games]
 gamename: crazyeights
 ---
 

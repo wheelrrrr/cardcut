@@ -2,7 +2,7 @@
 layout: default
 title: Big 2
 resource: true
-categories: [rules]
+categories: [games]
 gamename: big2
 ---
 

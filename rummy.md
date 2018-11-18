@@ -2,7 +2,7 @@
 layout: default
 title: Rummy
 resource: true
-categories: [rules]
+categories: [games]
 gamename: rummy
 ---
 

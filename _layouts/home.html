@@ -2,37 +2,6 @@
 layout: default
 ---
 
-<!-- <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
-  {%- endif -%}
-
-</div> -->
-
 <div class="container">
   <div id="flow">
       <span class="flow-1"></span>
@@ -41,30 +10,37 @@ layout: default
   </div>
   <div class="section">
       <div class="row columns is-multiline">
-      {%- for post in site.posts -%}
-          <div class="column is-one-third">
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                <div class="card large">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-96x96">
-                                    <img src="https://i.imgsafe.org/a4/a4bb9acc5e.jpeg" alt="Image">
-                                </figure>
+        {% for cat in site.category-list %}
+        <section class="container">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <h1 class="title is-1">{{ cat  | capitalize }}</h1>
+              <div class="columns is-multiline">
+              {% for page in site.pages %}
+                {% if page.resource == true %}
+                  {% for pc in page.categories %}
+                    {% if pc == cat %}
+                      <div class="column is-one-fifth">
+                        <a href="{{ page.url  | prepend: site.baseurl }}">
+                          <div class="card article">
+                            <div class="card-content">
+                              <div class="content article-body">
+                                {{ page.title }}
+                              </div>
                             </div>
-                            <div class="media-content">
-                                <p class="title is-4 no-padding">{{ post.title | escape }}</p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            {{ post.excerpt }}
-                            <div class="background-icon"><span class="icon-twitter"></span></div>
-                        </div>
-                    </div>
-                </div>
-              </a>
+                          </div>
+                        </a>
+                      </div>
+                    {% endif %}   <!-- cat-match-p -->
+                  {% endfor %}  <!-- page-category -->
+                {% endif %}   <!-- resource-p -->
+              {% endfor %}  <!-- page -->
+              </div>
+            </div>
           </div>
-          
-          {%- endfor -%}
-        </div>
+        </section>
+        {% endfor %}  <!-- cat -->
+      </div>
       <!-- End Developers -->
+  </div>
+</div>
