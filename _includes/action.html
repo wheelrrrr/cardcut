@@ -33,15 +33,25 @@
         <!-- <div class="column is-1 depth-{{depth}}"></div> -->
         <div class="column col-padding is-{{6 | plus: depth}} depth-{{depth}}">
             <section class="card-section section">
-                <!-- {% if include.action.reference.items | size > 0 %}
-                <div class="columns is-multiline">
+                {% if include.action.reference.items | size > 0 %}
+                <h4 class="title is-4">Scoring Reference</h4>
+                <div class="columns is-1 is-multiline">
                 {% for item in include.action.reference.items %}
-                    <div class="column is-half">
+                {% if item.key | size > 0 %}
+                    <div class="column is-half scoring">
+                        <em>{{item.key}}</em>
+                    </div>
+                    <div class="column is-half scoring">
+                        {{item.value}}
+                    </div>
+                {% else %}
+                    <div class="column is-half scoring">
                     {{item}}
                     </div>
+                    {% endif %}
                     {% endfor %}
                 </div>
-                {% endif %} -->
+                {% endif %}
             </section>
         </div>
     </div>

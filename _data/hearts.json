@@ -41,16 +41,16 @@
 									"title": "Each Player",
 									"actions": [
 										{
-											"text": "Play card following suit if possible.</em>",
+											"text": "Play card following suit if possible.",
 											"type": "play4",
-											"title": "Follow Suit",
-											"prefix": "Do"
+											"title": "Try to follow suit",
+											"prefix": ""
 										},
 										{
 											"text": "Including Heart ♥ and Black Maria Q♠.",
 											"type": "play4",
-											"title": "Play any other suit",
-											"prefix": "Else"
+											"title": "Otherwise play any other suit",
+											"prefix": ""
 										}
 									],
 									"subtitle": "Until all players have played"

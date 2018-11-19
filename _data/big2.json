@@ -36,7 +36,7 @@
 								{
 									"text": "Cannot play. May opt out by choice.",
 									"type": "play3",
-									"title": "Pass",
+									"title": "Or pass",
 									"prefix": "Else"
 								}
 							],
