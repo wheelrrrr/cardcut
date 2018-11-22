@@ -2,7 +2,48 @@
 {% assign depth = 0 %}
 <div class="columns">
     <div class="column is-8 is-offset-2">
-        <h1 class="title is-1">{{page.title}}</h1>
+        <div class="columns">
+            <div class="column is-4">
+                <h1 class="title is-1">{{page.title}}</h1>
+            </div>
+            <div class="column is-8">
+                <div class="columns">
+                    <div class="column is-3">
+                        <section class="card-section section">
+                            <h5 class="title is-6">Players</h5>
+                            <p class="subtitle is-7">{{site.data[page.gamename].players}}</p>
+                        </section>
+                    </div>
+                    <div class="column is-3">
+                        <section class="card-section section">
+                            <h5 class="title is-6">Deal</h5>
+                            <p class="subtitle is-7">{{site.data[page.gamename].deal}}</p>
+                        </section>
+                    </div>
+                    <div class="column is-3">
+                        <section class="card-section section">
+                            <h5 class="title is-6">Rank</h5>
+                            <p class="subtitle is-7">{{site.data[page.gamename].rank}}</p>
+                        </section>
+                    </div>
+                    <div class="column is-3">
+                        <section class="card-section section">
+                            <h5 class="title is-6">Category</h5>
+                            <p class="subtitle is-7">{{site.data[page.gamename].category}}</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-12">
+                <section class="card-section section">
+                    <h5 class="title is-4">Aim</h5>
+                    <p class="subtitle is-6">{{site.data[page.gamename].aim}}</p>
+                </section>
+            </div>
+        </div>
+        
         <section class="card-section section">
             <h4 class="title is-4">{{ site.data[page.gamename].title }}</h4>
         </section>

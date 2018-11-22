@@ -1,5 +1,10 @@
 {
 	"title": "Play",
+	"aim": "Game ends when a player reaches an agreed points total or time.",
+	"deal": "13",
+	"players": "4",
+	"rank": "2, A, K, Q, J, 10…3; Suits: ♠ ♥ ♣ ♦",
+	"category": "Climbing Game",
 	"actions": [
 		{
 			"type": "root",

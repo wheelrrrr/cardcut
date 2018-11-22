@@ -1,6 +1,11 @@
 
 {
 	"title": "Play",
+	"aim": "Target score reached. Typically 100",
+	"deal": "10",
+	"players": "2",
+	"rank": "High ( K, Q, J ... 3, 2, A ) Low",
+	"category": "Draw and Discard Game",
 	"actions": [
 		{
 			"text": "After deal non-dealer can take from Discard. Refusal means dealer can take the card and begin. If neither take it, non-dealer begins as normal.",

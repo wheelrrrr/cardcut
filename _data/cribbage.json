@@ -1,5 +1,10 @@
 {
 	"title": "Play",
+	"aim": "The first to 121 points",
+	"deal": "6 (2x), 5 (3-4)",
+	"players": "2 - 4",
+	"rank": "High ( K, Q, J ... 3, 2, A ) Low",
+	"category": "Adding Game",
 	"actions": [
 		{
 			"text": "",

@@ -1,5 +1,10 @@
 {
 	"title": "Play",
+	"aim": "Winner is the first to 2 points or the last left in the game after all others are eliminated.",
+	"deal": "1 Spade and 3 Hearts to each player",
+	"players": "3 - 8",
+	"rank": "Spades are Skulls, Hearts are Roses",
+	"category": "Uncategorised",
 	"actions": [
 		{
 			"text": "Random dealer: 3 Hearts and 1 Spade to each player.",

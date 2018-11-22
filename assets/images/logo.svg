@@ -1,11 +1,17 @@
-<svg width="276" height="268" viewBox="0 0 276 268" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="34" y="34" width="242" height="30" fill="#E4FDE1"/>
-<rect width="246" height="30" fill="#D1DEDE"/>
-<rect y="238" width="246" height="30" fill="#D1DEDE"/>
-<rect x="34" y="102" width="242" height="30" fill="#E4FDE1"/>
-<rect x="34" y="64" width="30" height="39" fill="#E4FDE1"/>
-<rect x="34" y="166" width="30" height="38" fill="#E4FDE1"/>
-<rect y="30" width="30" height="208" fill="#D1DEDE"/>
-<rect x="34" y="136" width="242" height="30" fill="#E4FDE1"/>
-<rect x="34" y="204" width="242" height="30" fill="#E4FDE1"/>
+<svg width="277" height="336" viewBox="0 0 277 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="68" y="68" width="209" height="30" fill="#FFBF46"/>
+<rect x="34" y="34" width="175" height="30" fill="#E4FDE1"/>
+<rect width="172" height="30" fill="#D1DEDE"/>
+<rect x="34" y="272" width="175" height="30" fill="#E4FDE1"/>
+<rect x="34" y="170" width="175" height="30" fill="#E4FDE1"/>
+<rect x="34" y="136" width="175" height="30" fill="#E4FDE1"/>
+<rect y="306" width="172" height="30" fill="#D1DEDE"/>
+<rect x="68" y="102" width="209" height="30" fill="#FFBF46"/>
+<rect x="68" y="98" width="30" height="34" fill="#FFBF46"/>
+<rect x="68" y="204" width="30" height="34" fill="#FFBF46"/>
+<rect x="34" y="170" width="30" height="102" fill="#E4FDE1"/>
+<rect x="34" y="64" width="30" height="102" fill="#E4FDE1"/>
+<rect y="30" width="30" height="276" fill="#D1DEDE"/>
+<rect x="68" y="204" width="209" height="30" fill="#FFBF46"/>
+<rect x="68" y="238" width="209" height="30" fill="#FFBF46"/>
 </svg>

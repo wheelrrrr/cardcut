@@ -1,5 +1,10 @@
 {
 	"title": "Play",
+	"aim": "First to score: 2 = 100, 3 = 150, 4 = 200, 5 = 250, 6 = 300, 7 = 350",
+	"deal": "7 (2x) or 5 (3+)",
+	"players": "2 - 7",
+	"rank": "High ( 8, A, K, Q ... 4, 3, 2 ) Low",
+	"category": "Matching Game",
 	"actions": [
 		{
 			"type": "root",

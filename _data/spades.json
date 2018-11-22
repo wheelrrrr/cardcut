@@ -1,5 +1,10 @@
 {
 	"title": "Play",
+	"aim": "First partnership to 500 points",
+	"deal": "13",
+	"players": "4",
+	"rank": "High ( A, K, Q ... 4, 3, 2 ) Low",
+	"category": "Trick Taking Game",
 	"actions": [
 		{
 			"type": "root",

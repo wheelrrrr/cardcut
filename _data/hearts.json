@@ -1,5 +1,10 @@
 {
 	"title": "Play",
+	"aim": "LOWEST score wins when a player reaches 100pts",
+	"deal": "17 (3) , 13 (4) or 10 (5 [2♦] & [2♣] removed)",
+	"players": "3 - 5",
+	"rank": "2, A, K, Q, J, 10…3; Suits: ♠ ♥ ♣ ♦",
+	"category": "Trick Taking Game",
 	"actions": [
 		{
 			"text": "",
