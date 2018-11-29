@@ -29,6 +29,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+collections:
+  games:
+    output: true
+
 category-list: [games]
 
 # Exclude from processing.

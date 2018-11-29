@@ -11,25 +11,25 @@
                     <div class="column is-3">
                         <section class="card-section section">
                             <h5 class="title is-6">Players</h5>
-                            <p class="subtitle is-7">{{site.data[page.gamename].players}}</p>
+                            <p class="subtitle is-7">{{page.players}}</p>
                         </section>
                     </div>
                     <div class="column is-3">
                         <section class="card-section section">
                             <h5 class="title is-6">Deal</h5>
-                            <p class="subtitle is-7">{{site.data[page.gamename].deal}}</p>
+                            <p class="subtitle is-7">{{page.deal}}</p>
                         </section>
                     </div>
                     <div class="column is-3">
                         <section class="card-section section">
                             <h5 class="title is-6">Rank</h5>
-                            <p class="subtitle is-7">{{site.data[page.gamename].rank}}</p>
+                            <p class="subtitle is-7">{{page.rank}}</p>
                         </section>
                     </div>
                     <div class="column is-3">
                         <section class="card-section section">
                             <h5 class="title is-6">Category</h5>
-                            <p class="subtitle is-7">{{site.data[page.gamename].category}}</p>
+                            <p class="subtitle is-7">{{page.category}}</p>
                         </section>
                     </div>
                 </div>
@@ -39,15 +39,15 @@
             <div class="column is-12">
                 <section class="card-section section">
                     <h5 class="title is-4">Aim</h5>
-                    <p class="subtitle is-6">{{site.data[page.gamename].aim}}</p>
+                    <p class="subtitle is-6">{{page.aim}}</p>
                 </section>
             </div>
         </div>
         
         <section class="card-section section">
-            <h4 class="title is-4">{{ site.data[page.gamename].title }}</h4>
+            <h4 class="title is-4">Play</h4>
         </section>
-            {% for action in site.data[page.gamename].actions %}
+            {% for action in page.actions %}
                 {% include action.html action=action %}
             {% endfor %}
     </div>
