@@ -12,7 +12,7 @@ Most card games are simple but wordy rules are hard to read. My mission is to co
 
 Yes!
 
-[Check out the simple JSON structure](_data) of the rules definition and add new games.
+[Check out the simple yaml structure](_games) of the rules definition and add new games.
 
 ## Can I help improve visual depiction of each rule set?
 
