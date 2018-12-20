@@ -81,4 +81,27 @@ actions:
 
 ---
 
+**title**
+
 {%- include rules.html -%}
+
+## History
+
+Hearts card game has origins from 18 century game Reversis. It has evolved until the commonly known variant presented here. Microsoft shipped it with Windows in the 1990's and reached a whole new audience.
+
+## Play
+
+- Shooting the moon is a risky strategy which only really works if no-one suspects you are attempting it.
+- Temporary loose alliances between players is one of the most interesting aspects of this game.
+
+## Strategy Tips
+
+- Gang up on the player with the lowest score.
+- Whilst trying to shed the queen of spades at the earliest opportunity seems like an obvious good move, it can be useful to hang on to it to force it upon the leading player.
+- The cards passed to you probably provide some clues about what tactics they are going to be using that hand.
+- If they pass low hearts, they may be trying to shoot the moon, in which case you may need to play a self sacrificing game to stop them (temporary alliances form a key part of this card game!)
+- If you get a bunch of the same suit, the player may be trying to build a void of that suit. Be careful not to play a high card of that suit!
+- Building a void in a suit gives an opportunity to discard any card when that suit is led - this is really useful - especially if you have the Queen of Spades.
+- Sometimes it can be useful to help the losing player to stop them hitting 100 if you are not the current leader, as that signals the end of the game.
+- Taking the first trick with hearts stops anyone but you shooting the moon.
+- Taking a few hearts is nothing compared with taking the queen of spades so stay focussed on avoiding taking her!

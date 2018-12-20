@@ -63,3 +63,22 @@ $table-background-color: hsla(0, 0%, 100%, 0.0);
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
 }
+
+.contact-list,
+.social-media-list {
+  display: block;
+  list-style: none !important;
+  margin-left: 0 !important;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 18px;
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.grey {
+  color: #828282;
+}
